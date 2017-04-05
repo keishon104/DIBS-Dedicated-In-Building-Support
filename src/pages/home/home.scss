@@ -1,3 +1,36 @@
-page-home {
+$header_color: brown;
+$navbar-ios-height: 200px;
 
+page-home {
+ background-color: $header_color;
+ height: $navbar-ios-height;
+}
+
+ion-header {
+  //height: $navbar-ios-height;
+  background-color: $header_color;
+  background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
+
+}
+
+
+ion-navbar  ion-icon {
+  float: right;
+  padding-right: 1em;
+}
+
+ion-toolbar {
+  text-align: center;
+}
+
+ion-toolbar button ion-icon {
+  font-size: 300px;
+  padding: .75em;
+  padding-bottom: none;
+}
+
+.nav-icons {
+  margin: 0em;
+  text-align: center;
+  ;
 }
