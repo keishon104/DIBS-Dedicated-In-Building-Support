@@ -6,6 +6,16 @@ import { MyContentComponent } from '../components/my-content/my-content';
 import { CategoryPage } from '../pages/category/category';
 import { TrendingPage } from '../pages/trending/trending';
 import { ProfilePage } from '../pages/profile/profile';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import { CategoriesComponent } from '../components/categories/categories';
+
+
+
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': 'dca3032b'
+  }
+};
 
 
 
@@ -17,12 +27,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     MyContentComponent,
+    CategoriesComponent,
     CategoryPage,
     TrendingPage,
-    ProfilePage
+    ProfilePage,
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
