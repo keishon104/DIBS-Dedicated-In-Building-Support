@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
 
 
 /*
@@ -15,10 +17,14 @@ export class CategoriesComponent {
 
   text: string;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     console.log('Hello Categories Component');
     this.text = 'Hello World';
   }
+
+companyPage(){
+  alert("This clicker works");
+}
 
 
 

@@ -6,6 +6,7 @@ import { MyContentComponent } from '../components/my-content/my-content';
 import { CategoryPage } from '../pages/category/category';
 import { TrendingPage } from '../pages/trending/trending';
 import { ProfilePage } from '../pages/profile/profile';
+import { ProductsPage } from '../pages/products/products';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { CategoriesComponent } from '../components/categories/categories';
 
@@ -31,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CategoryPage,
     TrendingPage,
     ProfilePage,
+    ProductsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -42,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     CategoryPage,
     TrendingPage,
-    ProfilePage
+    ProfilePage,
+    ProductsPage
   ],
   providers: [
     StatusBar,
