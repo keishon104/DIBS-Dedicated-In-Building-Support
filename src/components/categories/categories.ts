@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HomePage } from '../pages/home/home';
 
 
 /*
@@ -21,8 +20,6 @@ export class CategoriesComponent {
     this.text = 'Hello World';
   }
 
-  nextPage(){
-    this.navCtrl.push(HomePage);
-  }
+
 
 }

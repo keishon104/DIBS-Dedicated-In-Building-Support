@@ -21,21 +21,24 @@ export class CategoryPage {
   this.navCtrl.setRoot(CategoryPage);
   }
 
-  nextPage(){
-    this.navCtrl.push(CategoryPage);
-  }
-  trendingPage(){
-    this.navCtrl.push(TrendingPage);
-  }
-  profilePage(){
-    this.navCtrl.push(ProfilePage);
-  }
-  homePage(){
-    this.navCtrl.push(HomePage);
-  }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoryPage');
+
+
   }
+
+
+    nextPage(){
+      this.navCtrl.push(CategoryPage);
+    }
+    trendingPage(){
+      this.navCtrl.push(TrendingPage);
+    }
+    profilePage(){
+      this.navCtrl.push(ProfilePage);
+    }
+    homePage(){
+      this.navCtrl.push(HomePage);
+    }
 
 }
