@@ -18,13 +18,9 @@ export class CategoriesComponent {
   text: string;
 
   constructor(public navCtrl: NavController) {
-    console.log('Hello Categories Component');
-    this.text = 'Hello World';
+
   }
 
-companyPage(){
-  alert("This clicker works");
-}
 
 
 

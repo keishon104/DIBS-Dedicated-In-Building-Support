@@ -4,26 +4,23 @@ import { CategoryPage } from '../category/category';
 import { TrendingPage } from '../trending/trending';
 import { ProfilePage } from '../profile/profile';
 import { HomePage } from '../home/home';
-import { CompanyOnePage } from '../company-one/company-one';
-
-
 
 /*
-  Generated class for the Products page.
-d
+  Generated class for the CompanyOne page.
+
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-products',
-  templateUrl: 'products.html'
+  selector: 'page-company-one',
+  templateUrl: 'company-one.html'
 })
-export class ProductsPage {
+export class CompanyOnePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProductsPage');
+    console.log('ionViewDidLoad CompanyOnePage');
   }
 
   nextPage(){
@@ -38,8 +35,6 @@ export class ProductsPage {
   homePage(){
     this.navCtrl.push(HomePage);
   }
-  companyPage(){
-    this.navCtrl.push(CompanyOnePage);
-  }
+
 
 }

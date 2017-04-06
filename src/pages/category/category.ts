@@ -3,6 +3,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { TrendingPage } from '../trending/trending';
 import { ProfilePage } from '../profile/profile';
+import { ProductsPage } from '../products/products';
+
 
 
 /*
@@ -18,7 +20,7 @@ import { ProfilePage } from '../profile/profile';
 export class CategoryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  this.navCtrl.setRoot(CategoryPage);
+
   }
 
   ionViewDidLoad() {
@@ -39,6 +41,9 @@ export class CategoryPage {
     }
     homePage(){
       this.navCtrl.push(HomePage);
+    }
+    companyPage(){
+      this.navCtrl.push(ProductsPage);
     }
 
 }

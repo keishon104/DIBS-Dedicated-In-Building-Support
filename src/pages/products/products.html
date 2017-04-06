@@ -5,14 +5,61 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar>
+      <ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon>
+    </ion-navbar>
 
-  <ion-navbar>
-    <ion-title>products</ion-title>
-  </ion-navbar>
+    <ion-toolbar class="nav-icons">
+      <button ion-button (click)="homePage();" icon-only clear>
+        <ion-icon ios="ios-home-outline" md="ios-home-outline"></ion-icon>
+      </button>
+
+      <button ion-button (click)="nextPage();" icon-only clear>
+        <ion-icon ios="ios-browsers-outline" md="ios-browsers-outline"></ion-icon>
+      </button>
+
+      <button ion-button (click)="trendingPage();" icon-only clear>
+        <ion-icon ios="ios-flame-outline" md="ios-flame-outline"></ion-icon>
+      </button>
+
+      <button ion-button (click)="profilePage();" icon-only clear>
+        <ion-icon ios="ios-contact-outline" md="ios-contact-outline"></ion-icon>
+      </button>
+
+
+    </ion-toolbar>
 
 </ion-header>
 
+<ion-content class="card-background-page">
 
-<ion-content padding>
+  <button ion-button (click)="companyPage();" icon-only clear><img src="assets/img/Videography.jpeg"/>
+    <div class="card-title">Graphic Design</div>
+    <div class="card-subtitle">500 COMPANIES</div>
+  </button>
+
+  <ion-card>
+    <img src="assets/img/Natural_Hair.jpg" alt="Photography"/>
+    <div class="card-title">Hair Styling</div>
+    <div class="card-subtitle">150 COMPANIES</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/Graphic_Design.jpeg"/>
+    <div class="card-title">Graphic Design</div>
+    <div class="card-subtitle">500 COMPANIES</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/Photography.jpg"/>
+    <div class="card-title">Photography</div>
+    <div class="card-subtitle">200 COMPANIES</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/Videography.jpeg"/>
+    <div class="card-title">Video Production</div>
+    <div class="card-subtitle">30 COMPANIES</div>
+  </ion-card>
 
 </ion-content>
