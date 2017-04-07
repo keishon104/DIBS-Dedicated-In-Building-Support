@@ -4,6 +4,8 @@ import { CategoryPage } from '../category/category';
 import { TrendingPage } from '../trending/trending';
 import { ProfilePage } from '../profile/profile';
 import { HomePage } from '../home/home';
+import { CalendarPage } from '../calendar/calendar';
+
 
 /*
   Generated class for the CompanyOne page.
@@ -36,7 +38,7 @@ export class CompanyOnePage {
     this.navCtrl.push(HomePage);
   }
   addApt(){
-    this.navCtrl.push()
+    this.navCtrl.push(CalendarPage);
   }
 
 
