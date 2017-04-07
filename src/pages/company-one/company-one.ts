@@ -35,6 +35,9 @@ export class CompanyOnePage {
   homePage(){
     this.navCtrl.push(HomePage);
   }
+  addApt(){
+    this.navCtrl.push()
+  }
 
 
 }
