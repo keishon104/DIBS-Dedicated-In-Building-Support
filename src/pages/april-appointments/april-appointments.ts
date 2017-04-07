@@ -1,27 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AprilAppointmentsPage } from '../april-appointments/april-appointments';
 
 /*
-  Generated class for the Calendar page.
+  Generated class for the AprilAppointments page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-calendar',
-  templateUrl: 'calendar.html'
+  selector: 'page-april-appointments',
+  templateUrl: 'april-appointments.html'
 })
-export class CalendarPage {
+export class AprilAppointmentsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CalendarPage');
-  }
-
-  aprilPage(){
-  this.navCtrl.push(AprilAppointmentsPage);
+    console.log('ionViewDidLoad AprilAppointmentsPage');
   }
 
 }
