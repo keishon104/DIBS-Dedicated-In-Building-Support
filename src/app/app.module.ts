@@ -10,6 +10,7 @@ import { ProductsPage } from '../pages/products/products';
 import { CompanyOnePage } from '../pages/company-one/company-one';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { AprilAppointmentsPage } from '../pages/april-appointments/april-appointments';
+import { CheckoutPage } from '../pages/checkout/checkout';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { CategoriesComponent } from '../components/categories/categories';
 
@@ -38,7 +39,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductsPage,
     CompanyOnePage,
     CalendarPage,
-    AprilAppointmentsPage
+    AprilAppointmentsPage,
+    CheckoutPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -54,7 +56,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductsPage,
     CompanyOnePage,
     CalendarPage,
-    AprilAppointmentsPage
+    AprilAppointmentsPage,
+    CheckoutPage
   ],
   providers: [
     StatusBar,

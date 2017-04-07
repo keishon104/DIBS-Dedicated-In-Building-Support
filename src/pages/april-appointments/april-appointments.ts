@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CheckoutPage } from '../checkout/checkout';
 
 /*
   Generated class for the AprilAppointments page.
@@ -17,6 +18,10 @@ export class AprilAppointmentsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AprilAppointmentsPage');
+  }
+
+  ConfirmPage(){
+    this.navCtrl.push(CheckoutPage);
   }
 
 }
