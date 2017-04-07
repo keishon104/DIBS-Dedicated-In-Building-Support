@@ -4,15 +4,19 @@ page-calendar {
 
 .calendar button {
   font-size: 12px;
-  width: 30%;
+  width: 12%;
   margin: 3px;
   margin-top: 10px;
   text-align: center;
-  
+
 }
 .MM {
   font-size: 15px;
   text-align: center;
   padding-bottom: 20px;
 
+}
+
+.month_options {
+  display: flex;
 }
