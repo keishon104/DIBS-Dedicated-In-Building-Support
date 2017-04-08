@@ -10,9 +10,81 @@
     <ion-title>trending</ion-title>
   </ion-navbar>
 
+  <ion-toolbar class="nav-icons">
+    <button ion-button (click)="homePage();" icon-only clear>
+      <ion-icon ios="ios-home-outline" md="ios-home-outline"></ion-icon>
+    </button>
+
+    <button ion-button (click)="nextPage();" icon-only clear>
+      <ion-icon ios="ios-browsers-outline" md="ios-browsers-outline"></ion-icon>
+    </button>
+
+    <button ion-button (click)="trendingPage();" icon-only clear>
+      <ion-icon ios="ios-flame-outline" md="ios-flame-outline"></ion-icon>
+    </button>
+
+    <button ion-button (click)="profilePage();" icon-only clear>
+      <ion-icon ios="ios-contact-outline" md="ios-contact-outline"></ion-icon>
+    </button>
+
+  </ion-toolbar>
+
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
+    <img src="assets/img/Videography.jpeg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Wolf Photography and Videography Services
+        </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+        <button ion-button icon-only small clear>Check Availability </button>
+    </ion-card-content>
+  </ion-card>
 
+
+  <ion-card>
+    <img src="assets/img/Product.jpg" alt="Second Business"/>
+    <ion-card-content>
+      <ion-card-title>
+        Graduation Photos
+        </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+        <button ion-button icon-only small clear>Check Availability </button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+  <img src="assets/img/Family_One.jpg" alt="Second Business"/>
+  <ion-card-content>
+    <ion-card-title>
+  Wedding and Family Photography    </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+      <button ion-button icon-only small clear>Check Availability </button>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+  <img src="assets/img/Product1.jpg" alt="Second Business"/>
+  <ion-card-content>
+    <ion-card-title>
+  Graduation Photos  </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+      <button ion-button icon-only small clear>Check Availability </button>
+  </ion-card-content>
+  </ion-card>
 </ion-content>

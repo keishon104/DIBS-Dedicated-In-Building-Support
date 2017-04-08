@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { CategoryPage } from '../category/category';
+import { ProfilePage } from '../profile/profile';
+import { ProductsPage } from '../products/products';
+
 
 /*
   Generated class for the Trending page.
@@ -18,5 +23,23 @@ export class TrendingPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TrendingPage');
   }
+
+
+  nextPage(){
+    this.navCtrl.push(CategoryPage);
+  }
+  trendingPage(){
+    this.navCtrl.push(TrendingPage);
+  }
+  profilePage(){
+    this.navCtrl.push(ProfilePage);
+  }
+  homePage(){
+    this.navCtrl.push(HomePage);
+  }
+  companyPage(){
+    this.navCtrl.push(ProductsPage);
+  }
+
 
 }

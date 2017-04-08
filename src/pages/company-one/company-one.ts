@@ -7,6 +7,7 @@ import { HomePage } from '../home/home';
 import { CalendarPage } from '../calendar/calendar';
 
 
+
 /*
   Generated class for the CompanyOne page.
 
@@ -19,7 +20,9 @@ import { CalendarPage } from '../calendar/calendar';
 })
 export class CompanyOnePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CompanyOnePage');
@@ -40,6 +43,7 @@ export class CompanyOnePage {
   addApt(){
     this.navCtrl.push(CalendarPage);
   }
+
 
 
 }
