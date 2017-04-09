@@ -1,7 +1,9 @@
 page-company-one {
 
 }
-
+apt-icon {
+  color: white;
+}
 apt-btn {
   float:right;
 }
@@ -24,4 +26,18 @@ ion-navbar button {
 }
 .business-name {
   text-align: center;
+}
+
+.biocompany {
+  padding-left:15%;
+  width:90%;
+  vertical-align:middle;
+}
+
+.bio {
+  width: 100%;
+  display: inline-block;
+  vertical-align: center;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
 }
