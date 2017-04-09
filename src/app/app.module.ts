@@ -15,6 +15,14 @@ import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { CategoriesComponent } from '../components/categories/categories';
 
 
+export const firebaseConfig = {
+apiKey: "AIzaSyA5yjereuVt6tdFLtVuWpgi4AdCLwzcDRs",
+authDomain: "dibbs-receipts.firebaseapp.com",
+databaseURL: "https://dibbs-receipts.firebaseio.com",
+projectId: "dibbs-receipts",
+storageBucket: "dibbs-receipts.appspot.com",
+messagingSenderId: "833628231428"
+};
 
 const cloudSettings: CloudSettings = {
   'core': {
