@@ -45,26 +45,110 @@
   <span class="business-name"><p>Zion Locks</p></span>
 </div>
 
+<!--Company Star rating -->
+<div class="rating-wrapper">
+       <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+       <label for="rating-input-1-5" class="rating-star"></label>
+       <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+       <label for="rating-input-1-4" class="rating-star"></label>
+       <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+       <label for="rating-input-1-3" class="rating-star"></label>
+       <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+       <label for="rating-input-1-2" class="rating-star"></label>
+       <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+       <label for="rating-input-1-1" class="rating-star"></label>
+    </div>
+
 <div class="biocompany">
   <span class="bio"><p>Bio: Licensed cosmetologist currently embracing my inner braider. Very fun open minded person. Always accepting new clients.</p></span>
 </div>
+<!-- Section for content selection: choosing to see, services, portfolio or reviews -->
+<ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="portfolio">
+        Portfolio
+      </ion-segment-button>
+      <ion-segment-button value="services">
+        Services
+      </ion-segment-button>
+      <ion-segment-button value="reviews">
+        Reviews
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 
-<ion-slides class="portfolio" pager>
+  <!-- Services Section -->
 
+  <div [ngSwitch]="pet">
+     <ion-list *ngSwitchCase="'services'">
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-puppy-1.jpg">
+         </ion-thumbnail>
+         <h2>Ruby</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-puppy-2.jpg">
+         </ion-thumbnail>
+         <h2>Oscar</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-puppy-4.jpg">
+         </ion-thumbnail>
+         <h2>Zoey</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-puppy-3.jpg">
+         </ion-thumbnail>
+         <h2>Otto</h2>
+       </ion-item>
+     </ion-list>
+     <!-- Portfolio Section -->
+     <ion-list *ngSwitchCase="'portfolio'">
+       <ion-slides class="portfolio" pager>
+         <ion-slide><img src="assets/img/woman-curly-hair.jpeg"/>
+           <h2>Slide 1</h2>
+         </ion-slide>
 
-  <ion-slide><img src="assets/img/woman-curly-hair.jpeg"/>
-    <h2>Slide 1</h2>
-  </ion-slide>
+         <ion-slide><img src="assets/img/Product.jpg"/>
+           <h2>Slide 1</h2>
+         </ion-slide>
 
-  <ion-slide><img src="assets/img/Product.jpg"/>
-    <h2>Slide 1</h2>
-  </ion-slide>
+         <ion-slide><img src="assets/img/Family_One.jpg"/>
+           <h2>Slide 1</h2>
+         </ion-slide>
+       </ion-slides>
+     </ion-list>
 
-  <ion-slide><img src="assets/img/Family_One.jpg"/>
-    <h2>Slide 1</h2>
-  </ion-slide>
+     <ion-list *ngSwitchCase="'reviews'">
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-duckling-1.jpg">
+         </ion-thumbnail>
+         <h2>Daffy</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-duckling-2.jpg">
+         </ion-thumbnail>
+         <h2>Huey</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-duckling-3.jpg">
+         </ion-thumbnail>
+         <h2>Dewey</h2>
+       </ion-item>
+       <ion-item>
+         <ion-thumbnail item-left>
+           <img src="assets/img/thumbnail-duckling-4.jpg">
+         </ion-thumbnail>
+         <h2>Louie</h2>
+       </ion-item>
+     </ion-list>
+   </div>
 
-
-
-</ion-slides>
 </ion-content>

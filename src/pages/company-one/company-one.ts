@@ -19,8 +19,10 @@ import { CalendarPage } from '../calendar/calendar';
   templateUrl: 'company-one.html'
 })
 export class CompanyOnePage {
+  pet: string = "portfolio";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
 
