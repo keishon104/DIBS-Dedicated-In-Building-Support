@@ -58,3 +58,19 @@ Graduation Photos  </ion-card-title>
     <button ion-button icon-only small clear>Check Availability </button>
 </ion-card-content>
 </ion-card>
+
+<!-- Connecting Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5yjereuVt6tdFLtVuWpgi4AdCLwzcDRs",
+    authDomain: "dibbs-receipts.firebaseapp.com",
+    databaseURL: "https://dibbs-receipts.firebaseio.com",
+    projectId: "dibbs-receipts",
+    storageBucket: "dibbs-receipts.appspot.com",
+    messagingSenderId: "833628231428"
+  };
+  firebase.initializeApp(config);
+</script>
